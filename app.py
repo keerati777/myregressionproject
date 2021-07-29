@@ -55,7 +55,7 @@ if show :
         df1 = df1.drop(na_select, axis=1)
         df1 = df1.dropna()
     elif imp_sel == 'Impute Missing Value':
-        imputetype = st.sidebar.selectbox('Select Scaler Method', ('Zero Value','Mean Imputation','KNN Imputation'))
+        imputetype = st.sidebar.selectbox('Select Impute Method', ('Zero Value','Mean Imputation','KNN Imputation'))
         if imputetype == 'Zero Value' :
             df1= df1.fillna(0)
         elif imputetype == 'Mean Imputation' :
